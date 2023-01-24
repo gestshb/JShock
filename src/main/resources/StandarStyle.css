@@ -1,0 +1,15 @@
+@font-face {
+
+    src: url("/fonts/Ubuntu_Arabic_R.ttf ");
+}
+.root {
+    -fx-body-color: #F5F5F5;
+    -fx-outer-border: #cecece;
+    -fx-font-family: "Ubuntu Arabic";
+    /*-fx-font-family:  Kacstone;*/
+}
+
+.label {
+
+    -fx-text-fill: #8f0373;
+}

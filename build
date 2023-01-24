@@ -1,0 +1,5 @@
+#!/bin/bash
+mvn clean package
+cd target
+rsync -azv JShockDetector-1.11-spring-boot.jar ../JShockDetector.jar
+

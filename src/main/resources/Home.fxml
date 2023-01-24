@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<HBox fillHeight="false" nodeOrientation="RIGHT_TO_LEFT" prefHeight="720.0" prefWidth="1300.0" stylesheets="@style/bootstrap3.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.spring.controller.ReportController">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="716.0" prefWidth="517.0" spacing="5.0" style="-fx-border-color: #ffa73f;">
+         <children>
+            <GridPane prefHeight="629.0" prefWidth="460.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="224.0" minWidth="10.0" prefWidth="115.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="387.0" minWidth="10.0" prefWidth="372.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="رقم المعاملة" GridPane.rowIndex="1" />
+                  <Label text="التاريخ" />
+                  <Label text="نوع السيارة" GridPane.rowIndex="2" />
+                  <Label text="رقم اللوحة" GridPane.rowIndex="3" />
+                  <Label text="الملاحظة الأولى" GridPane.rowIndex="5" />
+                  <Label text="الملاحظة الثانية" GridPane.rowIndex="6" />
+                  <Label text="رقم الهيكل" GridPane.rowIndex="4" />
+                  <Label text="الملاحظة الثالثة" GridPane.rowIndex="7" />
+                  <Label text="الملاحظة الرابعة" GridPane.rowIndex="8" />
+                  <Label text="الملاحظة الخامسة" GridPane.rowIndex="9" />
+                  <Label text="الملاحظة السادسة" GridPane.rowIndex="10" />
+                  <TextField fx:id="id" editable="false" prefHeight="38.0" prefWidth="206.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="carType" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextField fx:id="carId" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <TextField fx:id="bodyCarId" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <TextField fx:id="note_1" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <TextField fx:id="note_2" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                  <TextField fx:id="note_3" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                  <TextField fx:id="note_4" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                  <TextField fx:id="note_5" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                  <TextField fx:id="note_6" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                  <DatePicker fx:id="date_" prefWidth="346.0" GridPane.columnIndex="1" />
+               </children>
+            </GridPane>
+            <HBox alignment="BOTTOM_LEFT" prefHeight="104.0" prefWidth="448.0" spacing="10.0" VBox.vgrow="NEVER">
+               <children>
+                  <JFXButton maxHeight="-Infinity" minHeight="-Infinity" onAction="#save" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #ffa73f; -fx-text-fill: #ffffff; -fx-font-size: 15; -fx-pref-height: 70;" text=" ">
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/floppy-disk.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></JFXButton>
+                  <JFXButton layoutX="20.0" layoutY="46.0" maxHeight="-Infinity" minHeight="-Infinity" onAction="#remove" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #ffa73f; -fx-text-fill: #ffffff; -fx-font-size: 15; -fx-pref-height: 70;" text=" ">
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/delete.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></JFXButton>
+                  <JFXButton layoutX="238.0" layoutY="46.0" maxHeight="-Infinity" minHeight="-Infinity" onAction="#new_" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #ffa73f; -fx-text-fill: #ffffff; -fx-font-size: 15; -fx-pref-height: 70;" text=" ">
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/new.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></JFXButton>
+                  <JFXButton layoutX="130.0" layoutY="46.0" maxHeight="-Infinity" minHeight="-Infinity" onAction="#search" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #ffa73f; -fx-text-fill: #ffffff; -fx-font-size: 15; -fx-pref-height: 70;" text=" ">
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/magnifying-glass.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></JFXButton>
+                  <JFXButton layoutX="20.0" layoutY="46.0" maxHeight="-Infinity" minHeight="-Infinity" onAction="#print" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #ffa73f; -fx-text-fill: #ffffff; -fx-font-size: 15; -fx-pref-height: 70;" text=" ">
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/printer.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton layoutX="240.0" layoutY="46.0" maxHeight="-Infinity" minHeight="-Infinity" onAction="#exit" prefHeight="80.0" prefWidth="80.0" style="-fx-background-color: #ffa73f; -fx-text-fill: #ffffff; -fx-font-size: 15; -fx-pref-height: 70;" text=" ">
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/logout.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></JFXButton>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </VBox>
+      <VBox prefHeight="663.0" prefWidth="410.0" spacing="3.0">
+         <children>
+            <HBox alignment="CENTER" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="236.0" prefWidth="404.0" spacing="3.0" style="-fx-border-color: #ffa73f;">
+               <children>
+                  <ImageView fx:id="image_1" fitHeight="230.0" fitWidth="260.0" pickOnBounds="true" preserveRatio="true" />
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="117.0" spacing="5.0">
+                     <children>
+                        <Label text="الأمام" />
+                        <JFXButton fx:id="upImage_1" onAction="#uploadToUI" prefWidth="116.0" text="ارفع صورة" />
+                        <JFXButton fx:id="deleteImage_1" layoutX="10.0" layoutY="10.0" onAction="#deleteImage" prefWidth="116.0" text="احذف الصورة" />
+                        <JFXToggleButton fx:id="shock_1" minHeight="-Infinity" prefHeight="20.0" prefWidth="116.0" text="غير سليم" />
+                     </children>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" maxHeight="236.0" minHeight="236.0" prefHeight="234.0" prefWidth="404.0" spacing="3.0" style="-fx-border-color: #ffa73f;">
+               <children>
+                  <ImageView fx:id="image_3" fitHeight="230.0" fitWidth="260.0" pickOnBounds="true" preserveRatio="true" />
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="117.0" spacing="5.0">
+                     <children>
+                        <Label text="اليمين" />
+                        <JFXButton fx:id="upImage_3" onAction="#uploadToUI" prefWidth="116.0" text="ارفع صورة" />
+                        <JFXButton fx:id="deleteImage_3" layoutX="10.0" layoutY="10.0" onAction="#deleteImage" prefWidth="116.0" text="احذف الصورة" />
+                        <JFXToggleButton fx:id="shock_3" minHeight="-Infinity" prefHeight="20.0" prefWidth="116.0" text="غير سليم" />
+                     </children>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="210.0" maxHeight="236.0" minHeight="236.0" prefHeight="94.0" prefWidth="387.0" spacing="3.0" style="-fx-border-color: #ffa73f;">
+               <children>
+                  <ImageView fx:id="image_5" fitHeight="230.0" fitWidth="260.0" pickOnBounds="true" preserveRatio="true" />
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="117.0" spacing="5.0">
+                     <children>
+                        <Label text="الفوق" />
+                        <JFXButton fx:id="upImage_5" onAction="#uploadToUI" prefWidth="116.0" text="ارفع صورة" />
+                        <JFXButton fx:id="deleteImage_5" layoutX="10.0" layoutY="10.0" onAction="#deleteImage" prefWidth="116.0" text="احذف الصورة" />
+                        <JFXToggleButton fx:id="shock_5" minHeight="-Infinity" prefHeight="20.0" prefWidth="116.0" text="غير سليم" />
+                     </children>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </padding>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+         </padding>
+      </VBox>
+      <VBox layoutX="490.0" layoutY="20.0" prefHeight="706.0" prefWidth="407.0" spacing="3.0">
+         <children>
+            <HBox alignment="CENTER" maxHeight="236.0" minHeight="236.0" prefHeight="94.0" prefWidth="387.0" spacing="3.0" style="-fx-border-color: #ffa73f;">
+               <children>
+                  <ImageView fx:id="image_2" fitHeight="230.0" fitWidth="260.0" pickOnBounds="true" preserveRatio="true" />
+                  <VBox alignment="CENTER" prefHeight="230.0" prefWidth="117.0" spacing="5.0">
+                     <children>
+                        <Label text="الخلف" />
+                        <JFXButton fx:id="upImage_2" onAction="#uploadToUI" prefWidth="116.0" text="ارفع صورة" />
+                        <JFXButton fx:id="deleteImage_2" layoutX="10.0" layoutY="10.0" onAction="#deleteImage" prefWidth="116.0" text="احذف الصورة" />
+                        <JFXToggleButton fx:id="shock_2" minHeight="-Infinity" prefHeight="20.0" prefWidth="116.0" text="غير سليم" />
+                     </children>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" maxHeight="236.0" minHeight="236.0" prefHeight="94.0" prefWidth="387.0" spacing="3.0" style="-fx-border-color: #ffa73f;">
+               <children>
+                  <ImageView fx:id="image_4" fitHeight="230.0" fitWidth="260.0" pickOnBounds="true" preserveRatio="true" />
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="117.0" spacing="5.0">
+                     <children>
+                        <Label text="الشمال" />
+                        <JFXButton fx:id="upImage_4" onAction="#uploadToUI" prefWidth="116.0" text="ارفع صورة" />
+                        <JFXButton fx:id="deleteImage_4" layoutX="10.0" layoutY="10.0" onAction="#deleteImage" prefWidth="116.0" text="احذف الصورة" />
+                        <JFXToggleButton fx:id="shock_4" minHeight="-Infinity" prefHeight="20.0" prefWidth="116.0" text="غير سليم" />
+                     </children>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </padding>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+         </padding>
+      </VBox>
+   </children>
+   <padding>
+      <Insets left="10.0" right="10.0" />
+   </padding>
+</HBox>

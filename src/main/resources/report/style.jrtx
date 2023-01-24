@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio -->
+<jasperTemplate xmlns="http://jasperreports.sourceforge.net/jasperreports/template" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/template http://jasperreports.sourceforge.net/xsd/jaspertemplate.xsd">
+	<style name="SimpleStyle" forecolor="#000000" hTextAlign="Center" hImageAlign="Center" vTextAlign="Middle" vImageAlign="Middle" pattern="" isBlankWhenNull="true" fontName="Arial" fontSize="10">
+		<paragraph rightIndent="5"/>
+	</style>
+	<style name="DoubleFormat" style="SimpleStyle" pattern="#,###,###,##0.00" isBlankWhenNull="false"/>
+</jasperTemplate>

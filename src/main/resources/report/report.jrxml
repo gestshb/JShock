@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.16.0.final using JasperReports Library version 6.16.0-48579d909b7943b64690c65c71e07e0b80981928  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report" pageWidth="595" pageHeight="842" columnWidth="569" leftMargin="13" rightMargin="13" topMargin="13" bottomMargin="13" uuid="e59baea2-5d86-4808-827c-9c932be72d54">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<import value="com.spring.bean.Report"/>
+	<parameter name="REPORT_OBJECT" class="com.spring.bean.Report"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band height="816" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="120" width="569" height="696" uuid="96259b9e-e8c1-45b5-b970-a73e9822ac50"/>
+				<graphicElement>
+					<pen lineWidth="2.0" lineStyle="Double" lineColor="#0000CC"/>
+				</graphicElement>
+			</rectangle>
+		</band>
+	</background>
+	<title>
+		<band height="123" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="220" height="36" forecolor="#CC0000" uuid="850872a6-efce-4e46-a3f6-79ddab633b57">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="19" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Ali M.AIFiraide Est]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="38" width="220" height="30" forecolor="#000099" uuid="88c5758d-4f6e-4dcc-a954-f0c87be4e67c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[For The Sale of Automotive Paints & Accessories.
+Installation & Paint industry]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="68" width="220" height="50" uuid="163621b1-4b6a-4198-8d3c-2c669c7daa58"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[AdministrationBuraydahCommercialStreet,
+P OBox850Tel fax 0163235558
+alfraidi2011@hotmail.com
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="" x="349" y="37" width="220" height="30" forecolor="#000099" uuid="e642420e-a18f-4b3b-bfef-4153921e2309">
+					<property name="com.jaspersoft.studio.unit.y" value="pixel"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[لبيع دهانات السيارات ولوازمها
+تركيب وصناعة البويات]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="349" y="68" width="220" height="50" uuid="41b19815-825e-4206-908c-01baeb75bf5a"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<text><![CDATA[الإدارة بريده /  الشارع التجاري ص .ب 850
+تليفاكس 0163235558 
+alfraidi2012@hotmail.com]]></text>
+			</staticText>
+			<staticText>
+				<reportElement key="" x="349" y="0" width="220" height="36" forecolor="#CC0000" uuid="3ec35a8b-f14d-4c0a-aadd-b8393a1aab22"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="19" isBold="true"/>
+				</textElement>
+				<text><![CDATA[مؤسسة علي محمد الفريدي]]></text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="655" splitType="Stretch">
+			<textField>
+				<reportElement x="490" y="0" width="76" height="30" uuid="51508dc1-5e44-4552-8d30-224a60fe5c8e"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["رقم المعاملة"]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement key="" x="410" y="0" width="80" height="30" uuid="aeb60e82-32cb-4721-a86f-44eaa3f6f86b"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{REPORT_OBJECT}.getId().toString()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="360" y="0" width="50" height="30" uuid="b09613ef-dffb-4941-8e28-b707a5954d40"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["التاريخ"]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="5" y="0" width="355" height="30" uuid="7b8fd648-ce87-43a8-b5c6-e55371dabef7"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{REPORT_OBJECT}.getDate_()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement key="" x="490" y="32" width="76" height="30" uuid="e859c066-dbcc-4c57-915e-f6589a69b478"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["نوع السيارة"]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement key="" x="410" y="32" width="80" height="30" uuid="3a76ef04-0e4f-4d6d-b3c7-62021bad490d"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{REPORT_OBJECT}.getCarType()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement key="" x="329" y="32" width="80" height="30" uuid="a519db49-decb-42ef-9c3c-dcb5b5161400"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["لوحة السيارة"]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement key="" x="233" y="32" width="96" height="30" uuid="feef2f26-d1f0-4a5c-8753-0066d7455fa2"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{REPORT_OBJECT}.getCarId()]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement key="" x="163" y="32" width="70" height="30" uuid="f890875e-769a-4246-a5d7-686bcc6b51ef"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["رقم الهيكل"]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement key="" x="5" y="32" width="158" height="30" uuid="a6d2a398-2798-43f9-afa3-97830b0e630a"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Right" verticalAlignment="Middle" markup="styled">
+					<font fontName="Arial" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{REPORT_OBJECT}.getBodyCarId()]]></textFieldExpression>
+			</textField>
+			<image hAlign="Center" vAlign="Middle">
+				<reportElement x="5" y="70" width="270" height="130" uuid="c67f5f41-5565-44db-ad97-080ed288e4fa"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<imageExpression><![CDATA[new ByteArrayInputStream($P{REPORT_OBJECT}.getImage_2())]]></imageExpression>
+			</image>
+			<image hAlign="Center" vAlign="Middle">
+				<reportElement x="296" y="70" width="270" height="130" uuid="d974fa1d-6f09-4469-8218-973ac3316833"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<imageExpression><![CDATA[new ByteArrayInputStream($P{REPORT_OBJECT}.getImage_1())]]></imageExpression>
+			</image>
+			<image hAlign="Center" vAlign="Middle" isUsingCache="true">
+				<reportElement x="5" y="230" width="270" height="130" uuid="6479518a-47b2-4090-90d7-1f4eceb4a20e"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<imageExpression><![CDATA[new ByteArrayInputStream($P{REPORT_OBJECT}.getImage_4())]]></imageExpression>
+			</image>
+			<image hAlign="Center" vAlign="Middle" isUsingCache="true">
+				<reportElement x="296" y="230" width="270" height="130" uuid="102987a5-48c8-40c5-982d-b9206316898f"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<imageExpression><![CDATA[new ByteArrayInputStream($P{REPORT_OBJECT}.getImage_3())]]></imageExpression>
+			</image>
+			<image hAlign="Center" vAlign="Middle" isUsingCache="true">
+				<reportElement x="5" y="386" width="270" height="130" uuid="6cea48cd-8a19-4050-b850-b12c5ef31988"/>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid"/>
+				</box>
+				<imageExpression><![CDATA[new ByteArrayInputStream($P{REPORT_OBJECT}.getImage_5())]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement key="" x="290" y="390" width="278" height="30" forecolor="#993366" uuid="0708092c-577a-4440-942f-6d5beb82de16"/>
+				<box>
+					<pen lineWidth="0.75" lineStyle="Double"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="22" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["الملاحظات"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement key="" x="300" y="200" width="266" height="27" forecolor="#000066" uuid="23dc4c50-2900-4457-813d-f0acc0a12719"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["الوجه الأمامي : " + ($P{REPORT_OBJECT}.getShock_1() ? "غير سليم" : "سليم")]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement key="" x="7" y="200" width="266" height="27" forecolor="#000066" uuid="84643b1f-c0f0-438d-bda8-32169613755f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["الوجه الخلفي : " + ($P{REPORT_OBJECT}.getShock_2() ? "غير سليم" : "سليم")]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement key="" x="298" y="360" width="266" height="27" forecolor="#000066" uuid="aa98245b-604e-434f-a7c4-a4b1b6521bfc"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["الجهة اليمنى : " + ($P{REPORT_OBJECT}.getShock_3() ? "غير سليمة" : "سليمة")]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement key="" x="5" y="360" width="266" height="27" forecolor="#000066" uuid="ad3b084d-6db1-4b28-b4d5-8e809a8bccda"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["الجهة اليسرى : " + ($P{REPORT_OBJECT}.getShock_4() ? "غير سليمة" : "سليمة")]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement key="" x="7" y="516" width="266" height="27" forecolor="#000066" uuid="1158b95b-d90a-4302-bd5a-b18d0f885aa4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA["الوجه الفوقي : " + ($P{REPORT_OBJECT}.getShock_5() ? "غير سليم" : "سليم")]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="false">
+				<reportElement x="290" y="430" width="274" height="220" isPrintInFirstWholeBand="true" forecolor="#003300" uuid="f468c8e6-fd6e-4cac-ad82-bcb33c509fab">
+					<property name="com.jaspersoft.studio.unit.leftIndent" value="px"/>
+					<property name="com.jaspersoft.studio.unit.rightIndent" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" size="13"/>
+					<paragraph lineSpacingSize="1.0" leftIndent="2" rightIndent="2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{REPORT_OBJECT}.getNote_1() +"\n"+
+$P{REPORT_OBJECT}.getNote_2() +"\n"+
+$P{REPORT_OBJECT}.getNote_3() +"\n"+
+$P{REPORT_OBJECT}.getNote_4() +"\n"+
+$P{REPORT_OBJECT}.getNote_5() +"\n"+
+$P{REPORT_OBJECT}.getNote_6()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="70" y="580" width="100" height="30" uuid="a9ae4294-3d13-400a-a57f-35497fc6adc9"/>
+				<textElement>
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[الإمضاء والتوقيع]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="34" splitType="Stretch">
+			<staticText>
+				<reportElement x="478" y="1" width="90" height="33" forecolor="#000099" uuid="f2c3a8ba-ca4e-4dbb-b5c2-92dc348467cf">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid" lineColor="#000099"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[Rawaf صناعية الرواف
+0565968381]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="371" y="1" width="107" height="33" forecolor="#000099" uuid="426d5b52-d253-4096-a2c9-292110dc098f">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid" lineColor="#000099"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[Saleem صناعية السليم
+0163235558]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="280" y="1" width="90" height="33" forecolor="#000099" uuid="bfc27a6e-b3a6-4859-8f08-44e4669c9951">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid" lineColor="#000099"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[Hail حائل
+0508772228]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="191" y="1" width="90" height="33" forecolor="#000099" uuid="fb28d30a-80c0-4b35-80b3-f52efe35f382">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid" lineColor="#000099"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[ASAKA سكاكا
+0565058381]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="91" y="1" width="101" height="33" forecolor="#000099" uuid="3c5a1472-8ec8-485f-b374-e711e43bb2ba">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid" lineColor="#000099"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[ALDAMMAM  الدمام
+0549918384]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="1" width="90" height="33" forecolor="#000099" uuid="f3c59700-37e0-4308-a292-9562a8a0b8bd">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<box>
+					<pen lineWidth="1.0" lineStyle="Solid" lineColor="#000099"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[ALKHOBAR   الخبر 
+ 0547348384]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+</jasperReport>
